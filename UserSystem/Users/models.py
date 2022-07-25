@@ -30,5 +30,5 @@ class UserDerived(AbstractUser):
     country = models.CharField(max_length=30)
     objects = CustomAccountManager()
 
-    USERNAME_FIELD = 'username'
+    #USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email', 'date_of_birth']
